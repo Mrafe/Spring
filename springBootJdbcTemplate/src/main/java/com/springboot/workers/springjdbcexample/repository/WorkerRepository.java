@@ -49,7 +49,7 @@ public class WorkerRepository implements WorkerDAO {
 	@Override
 	@SuppressWarnings("deprecation")
 	public Worker getWorker(Integer workerId) throws SQLException {
-		String sql = "SELECT * FROM students WHERE id = ?";
+		String sql = "SELECT * FROM worker WHERE worker_id = ?";
 		Worker worker = jdbcTemplateObject.queryForObject(
 				sql, 
 				new Object[] {workerId}, 
@@ -62,11 +62,11 @@ public class WorkerRepository implements WorkerDAO {
 	@Override
 	public List<Worker> getWorkers() throws SQLException {
 		String sql = "SELECT * FROM worker";
-		List<Worker> students = jdbcTemplateObject.query(
+		List<Worker> workers = jdbcTemplateObject.query(
 				sql,
 				new WorkerMapper());
 
-		return students;
+		return workers;
 	}
 
 	@Override
