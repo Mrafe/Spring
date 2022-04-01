@@ -41,32 +41,32 @@ public class WorkerController {
 	
 	@GetMapping("/createWorker")
 	public String createWorker() {
-		Worker worker1 = new Worker(21, "Ashwesh", "a.a@my_org.in");
+		Worker worker1 = new Worker(18, "Mai", "mai@anime.org");
 		try {
 			workerRepository.add(worker1);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return "Created worker "+ worker1.getFirstName() + "'s record.";
+		return "Created worker "+ worker1.getFirstName();
 	}
 	@GetMapping("/updateWorker")
 	public String updateWorker() {
-		Worker worker1 = new Worker(21, "Saitama", "s.s@my_org.in");
+		Worker worker1 = new Worker(18, "mai", "mai@anime.org");
 		try {
 			workerRepository.update(worker1);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return "Updated worker "+ worker1.getFirstName() + "'s record.";
+		return "Updated worker "+ worker1.getFirstName();
 	}
 	
 	@GetMapping("/deleteWorker")
 	public String deleteWorker() {
 		try {
-			workerRepository.delete(21);
+			workerRepository.delete(18);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return "Deleted worker " + 21 + "'s record.";
+		return "Deleted worker " + 18;
 	}
 }
