@@ -1,168 +1,133 @@
-2022-04-01 18:20:18.990  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 5700 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
-2022-04-01 18:20:18.991  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-04-01 18:20:19.030  INFO 5700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-04-01 18:20:19.031  INFO 5700 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-04-01 18:20:19.808  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-04-01 18:20:19.815  INFO 5700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-01 18:20:19.815  INFO 5700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-01 18:20:19.859  INFO 5700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-01 18:20:19.860  INFO 5700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 829 ms
-2022-04-01 18:20:20.154  INFO 5700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-04-01 18:20:20.180  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-01 18:20:20.187  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 1.464 seconds (JVM running for 1.934)
-2022-04-01 18:20:33.476  INFO 5700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 18:20:33.476  INFO 5700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-04-01 18:20:33.477  INFO 5700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-04-01 18:21:02.432  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 5700 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
-2022-04-01 18:21:02.433  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-04-01 18:21:02.565  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-04-01 18:21:02.566  INFO 5700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-01 18:21:02.566  INFO 5700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-01 18:21:02.575  INFO 5700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-01 18:21:02.575  INFO 5700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 141 ms
-2022-04-01 18:21:02.653  INFO 5700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-04-01 18:21:02.662  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-01 18:21:02.665  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.25 seconds (JVM running for 44.412)
-2022-04-01 18:21:02.666  INFO 5700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-04-01 18:21:07.993  INFO 5700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 18:21:07.993  INFO 5700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-04-01 18:21:07.994  INFO 5700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-04-01 18:22:33.742  WARN 5700 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2022-04-01 18:23:11.951  WARN 5700 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Boolean com.springboot.workers.crudapi.controller.WorkerController.createWorker(com.springboot.workers.crudapi.model.Worker)]
-2022-04-01 18:24:42.119  WARN 5700 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Boolean com.springboot.workers.crudapi.controller.WorkerController.createWorker(com.springboot.workers.crudapi.model.Worker)]
-2022-04-01 18:25:43.074  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 5700 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
-2022-04-01 18:25:43.074  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-04-01 18:25:43.194  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-04-01 18:25:43.196  INFO 5700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-01 18:25:43.196  INFO 5700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-01 18:25:43.205  INFO 5700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-01 18:25:43.205  INFO 5700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 130 ms
-2022-04-01 18:25:43.269  INFO 5700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-04-01 18:25:43.275  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-01 18:25:43.277  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.22 seconds (JVM running for 325.025)
-2022-04-01 18:25:43.278  INFO 5700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-04-01 18:26:08.098  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 5700 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
-2022-04-01 18:26:08.098  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-04-01 18:26:08.201  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-04-01 18:26:08.202  INFO 5700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-01 18:26:08.202  INFO 5700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-01 18:26:08.211  INFO 5700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-01 18:26:08.211  INFO 5700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 111 ms
-2022-04-01 18:26:08.272  INFO 5700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-04-01 18:26:08.277  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-01 18:26:08.280  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.195 seconds (JVM running for 350.026)
-2022-04-01 18:26:08.281  INFO 5700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-04-01 18:26:16.869  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 5700 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
-2022-04-01 18:26:16.869  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-04-01 18:26:16.979  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-04-01 18:26:16.980  INFO 5700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-01 18:26:16.980  INFO 5700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-01 18:26:16.988  INFO 5700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-01 18:26:16.988  INFO 5700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
-2022-04-01 18:26:17.044  INFO 5700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-04-01 18:26:17.050  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-01 18:26:17.053  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.198 seconds (JVM running for 358.8)
-2022-04-01 18:26:17.054  INFO 5700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-04-01 18:26:20.298  INFO 5700 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 18:26:20.298  INFO 5700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-04-01 18:26:20.299  INFO 5700 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-04-01 18:26:20.300  WARN 5700 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Boolean com.springboot.workers.crudapi.controller.WorkerController.createWorker(com.springboot.workers.crudapi.model.Worker)]
-2022-04-01 18:26:22.484  WARN 5700 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Boolean com.springboot.workers.crudapi.controller.WorkerController.createWorker(com.springboot.workers.crudapi.model.Worker)]
-2022-04-01 18:26:51.053  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 5700 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
-2022-04-01 18:26:51.054  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
-2022-04-01 18:26:51.162  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2022-04-01 18:26:51.163  INFO 5700 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-04-01 18:26:51.163  INFO 5700 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
-2022-04-01 18:26:51.171  INFO 5700 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-04-01 18:26:51.171  INFO 5700 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 116 ms
-2022-04-01 18:26:51.231  INFO 5700 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-04-01 18:26:51.237  INFO 5700 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2022-04-01 18:26:51.240  INFO 5700 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.2 seconds (JVM running for 392.987)
-2022-04-01 18:26:51.241  INFO 5700 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2022-04-01 18:26:52.957  INFO 5700 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-04-01 18:26:52.957  INFO 5700 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-04-01 18:26:52.957  INFO 5700 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2022-04-01 18:26:52.958  WARN 5700 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Boolean com.springboot.workers.crudapi.controller.WorkerController.createWorker(com.springboot.workers.crudapi.model.Worker)]
-2022-04-01 18:26:58.403  WARN 5700 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.Boolean com.springboot.workers.crudapi.controller.WorkerController.createWorker(com.springboot.workers.crudapi.model.Worker)]
-2022-04-01 18:29:48.220  WARN 5700 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-2022-04-01 18:31:12.143  WARN 5700 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'text/plain;charset=UTF-8' not supported]
-2022-04-01 18:33:08.755  INFO 5700 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2022-04-01 18:33:09.063  INFO 5700 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2022-04-01 18:33:09.169 ERROR 5700 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: StatementCallback; SQL [INSERT INTO worker VALUES(3,'Mai','Sak',12000,'2022-04-01 18:33:08','admin','mai@gmail.com');]; Duplicate entry '3' for key 'worker.PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'worker.PRIMARY'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'worker.PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.StatementImpl.executeUpdateInternal(StatementImpl.java:1335) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.StatementImpl.executeLargeUpdate(StatementImpl.java:2084) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.mysql.cj.jdbc.StatementImpl.executeUpdate(StatementImpl.java:1246) ~[mysql-connector-java-8.0.28.jar:8.0.28]
-	at com.zaxxer.hikari.pool.ProxyStatement.executeUpdate(ProxyStatement.java:119) ~[HikariCP-4.0.3.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyStatement.executeUpdate(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
-	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:546) ~[spring-jdbc-5.3.18.jar:5.3.18]
-	at org.springframework.jdbc.core.JdbcTemplate$1UpdateStatementCallback.doInStatement(JdbcTemplate.java:543) ~[spring-jdbc-5.3.18.jar:5.3.18]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:381) ~[spring-jdbc-5.3.18.jar:5.3.18]
-	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:558) ~[spring-jdbc-5.3.18.jar:5.3.18]
-	at com.springboot.workers.crudapi.repository.WorkerRepository.add(WorkerRepository.java:36) ~[classes/:na]
-	at com.springboot.workers.crudapi.repository.WorkerRepository$$FastClassBySpringCGLIB$$a12c43f.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.18.jar:5.3.18]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.18.jar:5.3.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.18.jar:5.3.18]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.18.jar:5.3.18]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.18.jar:5.3.18]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.18.jar:5.3.18]
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.18.jar:5.3.18]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.18.jar:5.3.18]
-	at com.springboot.workers.crudapi.repository.WorkerRepository$$EnhancerBySpringCGLIB$$2b09bfdb.add(<generated>) ~[classes/:na]
-	at com.springboot.workers.crudapi.controller.WorkerController.createWorker(WorkerController.java:64) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.18.jar:5.3.18]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.60.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.18.jar:5.3.18]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:889) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.60.jar:9.0.60]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2022-04-01 18:33:46.023  WARN 5700 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-04-04 10:25:40.784  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:25:40.788  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:25:40.838  INFO 3440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-04 10:25:40.838  INFO 3440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-04 10:25:41.657  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:25:41.666  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:25:41.666  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:25:41.715  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:25:41.715  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 876 ms
+2022-04-04 10:25:42.042  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:25:42.072  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:25:42.082  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 1.603 seconds (JVM running for 2.39)
+2022-04-04 10:25:45.160  INFO 3440 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-04 10:25:45.160  INFO 3440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-04 10:25:45.160  INFO 3440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-04 10:28:13.355  INFO 3440 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-04 10:28:13.747  INFO 3440 --- [http-nio-8080-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-04 10:40:01.251  INFO 3440 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-04 10:40:01.260  INFO 3440 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-04 10:40:01.319  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:40:01.319  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:40:01.492  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:40:01.493  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:40:01.493  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:40:01.504  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:40:01.504  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2022-04-04 10:40:01.595  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:40:01.605  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:40:01.609  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.309 seconds (JVM running for 861.916)
+2022-04-04 10:40:01.611  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:40:17.253  INFO 3440 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-04 10:40:17.253  INFO 3440 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-04 10:40:17.253  INFO 3440 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-04-04 10:42:52.286  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:42:52.286  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:42:52.451  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:42:52.451  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:42:52.452  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:42:52.464  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:42:52.464  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 176 ms
+2022-04-04 10:42:52.559  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:42:52.567  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:42:52.569  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.305 seconds (JVM running for 1032.877)
+2022-04-04 10:42:52.571  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:43:30.558  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:43:30.558  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:43:30.670  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:43:30.670  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:43:30.670  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:43:30.681  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:43:30.682  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 123 ms
+2022-04-04 10:43:30.761  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:43:30.767  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:43:30.770  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.227 seconds (JVM running for 1071.077)
+2022-04-04 10:43:30.771  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:44:14.929  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:44:14.929  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:44:15.044  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:44:15.045  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:44:15.046  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:44:15.055  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:44:15.055  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 125 ms
+2022-04-04 10:44:15.121  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:44:15.130  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:44:15.133  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.218 seconds (JVM running for 1115.44)
+2022-04-04 10:44:15.133  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:44:26.753  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:44:26.753  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:44:26.889  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:44:26.889  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:44:26.889  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:44:26.898  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:44:26.898  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2022-04-04 10:44:26.978  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:44:26.985  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:44:26.987  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.253 seconds (JVM running for 1127.295)
+2022-04-04 10:44:26.988  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:45:07.933  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:45:07.933  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:45:08.060  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:45:08.061  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:45:08.061  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:45:08.071  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:45:08.072  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 137 ms
+2022-04-04 10:45:08.137  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:45:08.144  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:45:08.146  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.231 seconds (JVM running for 1168.454)
+2022-04-04 10:45:08.147  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:45:25.913  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:45:25.914  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:45:26.047  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:45:26.048  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:45:26.048  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:45:26.059  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:45:26.060  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 144 ms
+2022-04-04 10:45:26.129  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:45:26.137  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:45:26.141  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.244 seconds (JVM running for 1186.448)
+2022-04-04 10:45:26.142  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:45:44.869  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:45:44.869  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:45:44.990  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:45:44.990  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:45:44.990  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:45:44.998  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:45:44.999  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2022-04-04 10:45:45.066  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:45:45.072  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:45:45.074  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.223 seconds (JVM running for 1205.381)
+2022-04-04 10:45:45.075  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:45:59.247  INFO 3440 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-04 10:45:59.247  INFO 3440 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-04 10:45:59.249  INFO 3440 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-04 10:46:25.629  INFO 3440 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-04-04 10:46:25.652  INFO 3440 --- [http-nio-8080-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-04-04 10:47:25.979  INFO 3440 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-04-04 10:47:25.983  INFO 3440 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-04-04 10:47:26.028  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Starting SpringBootCrudApiApplication using Java 17.0.2 on LEONA with PID 3440 (D:\work\Mthree\eclipse-workspace\springBootCrudApi\target\classes started by Leona in D:\work\Mthree\eclipse-workspace\springBootCrudApi)
+2022-04-04 10:47:26.028  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-04-04 10:47:26.147  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-04 10:47:26.148  INFO 3440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-04 10:47:26.148  INFO 3440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-04 10:47:26.156  INFO 3440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-04 10:47:26.156  INFO 3440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2022-04-04 10:47:26.225  INFO 3440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-04 10:47:26.232  INFO 3440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-04 10:47:26.236  INFO 3440 --- [restartedMain] c.s.w.c.SpringBootCrudApiApplication     : Started SpringBootCrudApiApplication in 0.222 seconds (JVM running for 1306.544)
+2022-04-04 10:47:26.238  INFO 3440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-04-04 10:47:29.437  INFO 3440 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-04 10:47:29.437  INFO 3440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-04 10:47:29.438  INFO 3440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-04 10:47:29.447  INFO 3440 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-04-04 10:47:29.465  INFO 3440 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.

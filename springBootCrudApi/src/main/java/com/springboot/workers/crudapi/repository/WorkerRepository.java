@@ -20,7 +20,7 @@ public class WorkerRepository implements WorkerDAO {
 	
 
 	@Override
-	public int add(Worker worker) throws SQLException {
+	public int createWorker(Worker worker) throws SQLException {
 		 int workerId = worker.getWorkerId();
 	        String firstName = worker.getFirstName();
 	        String lastName = worker.getLastName();
@@ -37,7 +37,7 @@ public class WorkerRepository implements WorkerDAO {
 	}
 
 	@Override
-	public int delete(Integer workerId) throws SQLException {
+	public int deleteWorkerById(Integer workerId) throws SQLException {
 		String sql = "DELETE FROM worker WHERE worker_id = ?";
 		return jdbcTemplateObject.update(sql, workerId);
 		
@@ -46,7 +46,7 @@ public class WorkerRepository implements WorkerDAO {
 
 	@Override
 	@SuppressWarnings("deprecation")
-	public Worker getWorker(Integer workerId) throws SQLException {
+	public Worker findWorkerById(Integer workerId) throws SQLException {
 		String sql = "SELECT * FROM worker WHERE worker_id = ?";
 		return jdbcTemplateObject.queryForObject(
 				sql, 
@@ -56,7 +56,7 @@ public class WorkerRepository implements WorkerDAO {
 	}
 
 	@Override
-	public List<Worker> getWorkers() throws SQLException {
+	public List<Worker> findAllWorkers() throws SQLException {
 		String sql = "SELECT * FROM worker";
 		return jdbcTemplateObject.query(
 				sql,
@@ -64,7 +64,7 @@ public class WorkerRepository implements WorkerDAO {
 	}
 
 	@Override
-	public void update(Worker emp) throws SQLException {
+	public void updateWorker(Worker emp) throws SQLException {
 		String sql = """
                 UPDATE TABLE Worker SET
                 worker_id =?,
@@ -80,14 +80,9 @@ public class WorkerRepository implements WorkerDAO {
 	}
 
 	@Override
-	public int changeEmail(String email, int id) {
-		String format = """
-				UPDATE Worker
-					SET	
-						email = ?
-					WHERE worker_id = ?
-				""";
-		return jdbcTemplateObject.update(format, email, id);
+	public int updateEmailById(String email, int id) {
+		String sql = "UPDATE Worker SET	email = ? WHERE worker_id = ?";
+		return jdbcTemplateObject.update(sql, email, id);
 	}
 
 }
