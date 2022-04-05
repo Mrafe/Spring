@@ -30,9 +30,10 @@ public class WorkerRepository implements WorkerDAO {
 	        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	        String joiningDate = sdf.format(date);
 	        String email = worker.getEmail();
-	        String query = String.format("INSERT INTO worker VALUES(%d,'%s','%s',%d,'%s','%s','%s');", workerId,
+	        String password = worker.getPassword();
+	        String query = String.format("INSERT INTO worker VALUES(%d,'%s','%s',%d,'%s','%s','%s', '%s');", workerId,
 	                firstName,
-	                lastName, salary, joiningDate, department, email);
+	                lastName, salary, joiningDate, department, email, password);
 		return jdbcTemplateObject.update(query);
 	}
 
@@ -73,9 +74,10 @@ public class WorkerRepository implements WorkerDAO {
                 salary =?,
                 joining_date = ?,
                 department = ?,
+                password =?,
                 WHERE worker_id = ?""";
 		
-		jdbcTemplateObject.update(sql,emp.getWorkerId(),emp.getFirstName(),emp.getLastName(), emp.getSalary(), emp.getJoiningDate(), emp.getDepartment(), emp.getEmail());
+		jdbcTemplateObject.update(sql,emp.getWorkerId(),emp.getFirstName(),emp.getLastName(), emp.getSalary(), emp.getJoiningDate(), emp.getDepartment(), emp.getEmail(), emp.getPassword());
 
 	}
 

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <main class="col-md-5 mx-auto">
+      <header class="text-center">
+        <h1 class="display-4 text-primary text-uppercase">Login</h1>
+        <h6 class="text-secondary">Enter your credentials</h6>
+      </header>
+      <hr />
+
+      <section>
+        <form action="register-backend" method="GET" class="font-weight-bold">
+          <!-- Email -->
+          <div id="emailField" name="emailField" class="form-group">
+            <label for="email">Email</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="abc@xyz.com"
+              required
+            />
+          </div>
+
+          <!-- Password -->
+          <div id="passwordField" name="passwordField" class="form-group">
+            <label for="password">Password</label><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="row" style="margin-bottom: 30px">
+            <div class="col-sm-6">
+              <label for="captcha1">Enter Captcha</label>
+              <input
+                style="
+                  background-color: rgb(234, 227, 32);
+                  color: rgb(37, 116, 201);
+                "
+                type="readonly"
+                class="form-control"
+                required
+                id="captcha1"
+                name="captcha1"
+                value="Q34cq1"
+              />
+            </div>
+            <div class="col-sm-6">
+              <label for="captcha2">Enter Captcha</label>
+              <input
+                type="text"
+                class="form-control"
+                required
+                id="captcha2"
+                name="captcha2"
+              />
+            </div>
+          </div>
+
+          <!-- Signed in -->
+          <div id="signed-in" name="signed-in" class="form-group">
+            <div
+              id="signed-in-status"
+              name="signed-in-status"
+              class="font-weight-normal"
+            >
+              <div class="form-check form-check-inline">
+                <input
+                  type="checkbox"
+                  name="signed-in"
+                  id="signed-in"
+                  class="form-check-input"
+                />
+                <label for="student" class="form-check-label"
+                  >Keep me signed in</label
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div id="sign-in-Button">
+            <input
+              type="signin"
+              value="Sign in"
+              class="btn btn-block btn-primary my-4"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

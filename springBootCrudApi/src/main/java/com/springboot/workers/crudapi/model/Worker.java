@@ -17,20 +17,22 @@ public class Worker {
     Date joiningDate;
     String department;
     String email;
+    String password;
     
     public Worker() {
     	this.joiningDate = new Date(new java.util.Date().getTime());
     }
 
-	public Worker(int workerId, String firstName, String email) {
+	public Worker(int workerId, String firstName, String email, String password) {
          this.workerId = workerId;
          this.firstName = firstName;
          this.email = email;
+         this.password = password;
     }
 
 	public Worker(int workerId, String firstName, String lastName, int salary, Date joiningDate,
             String department,
-            String email) {
+            String email, String password) {
         this.workerId = workerId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -38,10 +40,11 @@ public class Worker {
         this.joiningDate = joiningDate;
         this.department = department;
         this.email = email;
+        this.password = password;
     }
 
     public Worker(int workerId, String firstName, String lastName, int salary, String department,
-            String email) {
+            String email, String password) {
         this.workerId = workerId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -49,15 +52,8 @@ public class Worker {
         this.joiningDate = new Date(new java.util.Date().getTime());
         this.department = department;
         this.email = email;
+        this.password = password;
     }
-
-    public Worker(int workerId, String firstName, Date joiningDate, String email) {
-        this.workerId = workerId;
-        this.firstName = firstName;
-        this.joiningDate = joiningDate;
-        this.email = email;
-    }
-
     public Worker(int workerId, String email) {
         this.workerId = workerId;
         this.email = email;
@@ -120,9 +116,20 @@ public class Worker {
          this.email = email;
     }
 
-    @Override
-    public String toString() {
-         return "Worker [department=" + department + ", email=" + email + ", firstName=" + firstName + ", joiningDate="
-                   + joiningDate + ", lastName=" + lastName + ", salary=" + salary + ", workerId=" + workerId + "]";
-    }
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		return "Worker [workerId=" + workerId + ", firstName=" + firstName + ", lastName=" + lastName + ", salary="
+				+ salary + ", joiningDate=" + joiningDate + ", department=" + department + ", email=" + email
+				+"]";
+	}
+
+    
 }
